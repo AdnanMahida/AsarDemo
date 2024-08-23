@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:paddingHorizontal="6dp"
+    android:paddingVertical="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/startImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_background"
+        android:padding="12dp"
+        android:src="@drawable/ic_round_person_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStartTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Hella"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/startImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startImage" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="6dp"
+        android:indeterminate="false"
+        android:max="10"
+        android:padding="5dp"
+        android:progress="8"
+        android:progressDrawable="@drawable/progress_bar_background"
+        app:layout_constraintBottom_toBottomOf="@+id/startImage"
+        app:layout_constraintEnd_toStartOf="@+id/endImage"
+        app:layout_constraintStart_toEndOf="@+id/startImage"
+        app:layout_constraintTop_toTopOf="@+id/startImage" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLeftPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="₹9"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintStart_toEndOf="@+id/startImage"
+        app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRightPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="₹1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintEnd_toStartOf="@+id/endImage"
+        app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/endImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_background"
+        android:padding="12dp"
+        android:src="@drawable/ic_round_person_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="a few second age"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvEndTitle"
+        app:layout_constraintStart_toEndOf="@+id/tvStartTitle"
+        app:layout_constraintTop_toBottomOf="@+id/endImage" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEndTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Robin"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/endImage"
+        app:layout_constraintTop_toBottomOf="@+id/endImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

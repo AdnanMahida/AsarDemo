@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <item android:id="@android:id/background">-->
+<!--        <clip android:drawable="@drawable/border_shadow" />-->
+<!--    </item>-->
+
+<!--    <item android:id="@android:id/progress">-->
+<!--        <clip android:drawable="@drawable/seekbar_progress" />-->
+<!--    </item>-->
+<!--</layer-list>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff" />
+            <corners android:radius="5dp" />
+            <size android:height="5dp" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="#144cc7" />
+                <corners android:radius="5dp" />
+                <size android:height="5dp" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>
